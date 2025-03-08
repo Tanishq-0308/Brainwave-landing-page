@@ -1,4 +1,12 @@
 @import "tailwindcss";
+*{
+    font-family: "MagnoliaRegular", "sans-serif";
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
 
 @font-face {
     font-family: 'MagnoliaRegular';
@@ -24,11 +32,27 @@
     --font-display: "MagnoliaRegular", "sans-serif";
     --font-display-medium: "MagnoliaMedium", "sans-serif";
     --font-display-bold: "MagnoliaBold", "sans-serif";
-    --my-gradient:linear-gradient(90deg, rgba(56,35,93,1) 0%, rgba(34,8,46,1) 100%);
+    --my-gradient:linear-gradient(90deg, rgba(6,2,66,1) 0%, rgba(90,11,110,1) 52%, rgba(95,12,115,1) 81%, rgba(155,10,115,1) 100%);
+    --my-grad:linear-gradient(90deg, rgba(34,10,50,1) 0%, rgba(43,13,64,1) 100%);
+    --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 @layer utilities {
     .bg-my-gradient {
       background-image: var(--my-gradient);
     }
+    .bg-my-gradient-two {
+        background-image: var(--my-grad);
+    }
+  }
+
+.hero-video{
+    background: url('assets/hero-video.mp4');
+  }
+
+  .heroImage{
+    background: url('assets/download.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }

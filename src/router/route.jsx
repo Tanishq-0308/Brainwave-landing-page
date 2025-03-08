@@ -1,7 +1,7 @@
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router";
 import App from "../App";
 import About from "../screen/about/About";
-import Home from "../screen/home/Home";
+import Home from "../screen/Home/Home";
 import Products from "../screen/Products/Products";
 import ContactUs from "../screen/Contact us/ContactUs";
 import Client from "../screen/Clients/Client"
