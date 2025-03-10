@@ -51,8 +51,19 @@ body,html{
   }
 
   .heroImage{
-    background: url('assets/download.webp');
+    background: url('assets/download.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+  .services{
+    background: url('assets/services_back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @media(max-width:600px){
+    .heroImage{
+        background-position: left;
+    }
   }

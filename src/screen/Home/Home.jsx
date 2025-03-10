@@ -1,10 +1,12 @@
 import React from 'react'
-import Hero from '../../components/Hero/Hero'
+import Hero from '../../components/Home/Hero/Hero'
+import OurServices from '../../components/Home/OurServices/ourServices'
 
 const Home = () => {
   return (
     <>
-      <Hero/>
+      <Hero />
+      <OurServices />
     </>
   )
 }

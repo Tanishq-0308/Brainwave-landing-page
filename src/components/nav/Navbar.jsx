@@ -3,6 +3,7 @@ import logo from '../../assets/dark-logo.png'
 import { FiAlignJustify } from "react-icons/fi";
 import gsap from 'gsap';
 import { Link, NavLink } from 'react-router';
+import { list } from '../Constant/Constant.js';
 const Navbar = () => {
     useGSAP(() => {
         const tl = gsap.timeline();
@@ -17,39 +18,39 @@ const Navbar = () => {
             duration: 1
         })
     }, [])
-    const list = [
-        {
-            id:1,
-            name:'Home',
-            path:'/'
-        },
-        {
-            id:2,
-            name:'About Us',
-            path:'/about-us'
-        },
-        {
-            id:3,
-            name:'Services',
-            path:'/services'
-        },
-        {
-            id:4,
-            name:'Products',
-            path:'/products'
-        },
-        {
-            id:5,
-            name:'Clients',
-            path:'/clients'
-        },
-    ];
+    // const list = [
+    //     {
+    //         id:1,
+    //         name:'Home',
+    //         path:'/'
+    //     },
+    //     {
+    //         id:2,
+    //         name:'About Us',
+    //         path:'/about-us'
+    //     },
+    //     {
+    //         id:3,
+    //         name:'Services',
+    //         path:'/services'
+    //     },
+    //     {
+    //         id:4,
+    //         name:'Products',
+    //         path:'/products'
+    //     },
+    //     {
+    //         id:5,
+    //         name:'Clients',
+    //         path:'/clients'
+    //     },
+    // ];
     return (
         <>
-            <nav className='w-full h-[85px] bg-[#220A32] fixed top-0 left-0 right-0 z-20 flex items-center justify-between px-5 lg:px-12 text-white '>
+            <nav className='w-full h-[85px] bg-[#220A32] overflow-hidden fixed top-0 left-0 right-0 z-20 flex items-center justify-between px-5 lg:px-19 text-white '>
                 <div>
                     <Link to='/'>
-                    <img src={logo} alt="" className='h-[55px]' />
+                    <img src={logo} alt="" className='h-[45px] sm:h-[55px]:' />
                     </Link>
                 </div>
                 <div className=' hidden lg:flex'>
@@ -64,12 +65,12 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div id='contact-btn'>
-                    <button  className='hidden  lg:flex p-2 rounded-3xl border-none hover:bg-white cursor-pointer transition-all ease-in-out duration-350 shadow-[1px_0px_2px_1px_rgba(184,61,184,1)]  hover:text-purple-950'>
+                    <button  className='hidden lg:flex p-2 rounded-3xl border-none hover:bg-white cursor-pointer transition-all ease-in-out duration-350 shadow-[1px_0px_2px_1px_rgba(184,61,184,1)]  hover:text-purple-950'>
                     <NavLink to="/contact-us">
                         Contact us
                     </NavLink>
                     </button>
-                    <button className='text-4xl lg:hidden'>
+                    <button className='text-3xl lg:hidden'>
                     <FiAlignJustify />
                 </button>
                 </div>
